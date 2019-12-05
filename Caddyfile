@@ -19,9 +19,10 @@ http://localhost {
     errors stdout
 }
 
-
 wmts-t.sogeo.services {
-    tls self_signed
+    tls stefan.ziegler.de@gmail.com {
+        ca https://acme-staging-v02.api.letsencrypt.org/directory
+    }
 
     proxy /wms wms:80/wms {
         transparent
