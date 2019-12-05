@@ -29,10 +29,10 @@ wmts-t.sogeo.services {
         without /wms
     }
 
-    #proxy /avdpool avdpool:8080 {
-    #    transparent
-    #    without /avdpool
-    #}
+    proxy /avdpool avdpool:8080 {
+        transparent
+        without /avdpool
+    }
 
     #proxy / wmts:8080 {
     #    transparent
