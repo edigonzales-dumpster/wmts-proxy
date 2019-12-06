@@ -28,9 +28,9 @@ task buildDockerImage(type: DockerBuildImage) {
     description = "Build docker image."
     inputDir = project.rootDir
     tags = ["sogis/wmts-proxy:"+version, "sogis/wmts-proxy:latest"]
-    labels = ["wmts-wmts.created": new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()), 
-            "wmts-wmts.git_commit":  getCheckedOutGitCommitHash(), 
-            "wmts-wmts.travis_build": version]    
+    labels = ["wmts-proxy.created": new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()), 
+            "wmts-proxy.git_commit":  getCheckedOutGitCommitHash(), 
+            "wmts-proxy.travis_build": version]    
     noCache = false
 }
 
