@@ -34,9 +34,9 @@ wmts-t.sogeo.services {
         without /avdpool
     }
 
-    #proxy / wmts:8080 {
-    #    transparent
-    #}
+    proxy / wmts:8080 {
+        transparent
+    }
 
     log stdout
     errors stdout
