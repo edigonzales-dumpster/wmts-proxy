@@ -21,7 +21,7 @@ localhost {
     errors stdout
 }
 
-wmts-t.sogeo.services {
+wmts-t.sogeo.com {
     tls stefan.ziegler.de@gmail.com {
         ca https://acme-staging-v02.api.letsencrypt.org/directory
     }
