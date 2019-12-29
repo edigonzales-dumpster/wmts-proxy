@@ -1,26 +1,3 @@
-localhost {
-    tls stefan.ziegler.de@gmail.com {
-        ca https://acme-staging-v02.api.letsencrypt.org/directory
-    }
-
-    proxy /wms wms:80/wms {
-        transparent
-        without /wms
-    }
-
-    proxy /avdpool avdpool:8080 {
-        transparent
-        without /avdpool
-    }
-
-    proxy / wmts:8080 {
-        transparent
-    }
-
-    log stdout
-    errors stdout
-}
-
 wmts-t.sogeo.com {
     tls stefan.ziegler.de@gmail.com {
         ca https://acme-staging-v02.api.letsencrypt.org/directory
